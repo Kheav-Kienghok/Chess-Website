@@ -96,10 +96,10 @@ p {
 }
 
 .Our-team {
-    background-color: rgba(0, 0, 0, 0.5); /* Add a black background with transparency */
-    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px); 
     background-position: center;
-    backdrop-filter: blur(3px); /* Apply a blur effect to the background */
+    backdrop-filter: blur(3px); 
     padding: 4px;
     border-radius: 10px;
     display: flex;

@@ -61,7 +61,7 @@ nav ul li a {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content to the top */
+    justify-content: flex-start; 
     align-items: center;
     min-height: 90vh; /* Set minimum height of the main section to 100% of viewport height */
     text-align: center; /* Center text within the main section */
