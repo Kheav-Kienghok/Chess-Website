@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px;
+}
+
+.website-name {
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    letter-spacing: 2px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-left: -570px;
+}
+
+nav ul li {
+    margin-right: 50px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px; 
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center;
+    min-height: 90vh; /* Set minimum height of the main section to 100% of viewport height */
+    text-align: center; /* Center text within the main section */
+    padding: 60px;
+    background: url('img/Contact.jpg') no-repeat center center/cover; /* Set the background image */
+}
+
+h2 {
+    font-size: 90px;
+    display: block; /* or display: inline-block; */
+    width: 100%; /* Ensures the text wraps within the container */
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 40px;
+    display: block; /* or display: inline-block; */
+    width: 100%; /* Ensures the text wraps within the container */
+    text-decoration: none;
+    color: green;
+    margin-top: 10px;
+}
+
+.chessboard {
+    background-color: rgba(0, 0, 0, 0.5); /* Add a black background with transparency */
+    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+    background-position: center;
+    backdrop-filter: blur(3px); /* Apply a blur effect to the background */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.chessboard h3 {
+    font-size: 65px;
+    margin: 20px 0;
+    color: lightgreen; 
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px;
+    gap: 20px;
+    
+}
+
+.contact-group {
+    flex-basis: 30%; /* Adjust the width as needed for three columns */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content in each column */
+    padding: 10px; /* Add padding to create space */
+}
+
+.left-group {
+    margin-right: 100px; /* Add margin to create space between left and middle groups */
+}
+
+
+.right-group {
+    margin-left: 100px;
+}
+
+.contact-group p {
+    font-size: 20px;
+    color: green;
+    margin: 5px 0;
+    color: lightgreen; 
+}
+
+.contact-group p:first-child {
+    font-weight: bold; /* Make the labels bold */
+}
+
+        /* Style the form container */
+        form {
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Style the left and right columns */
+        .column {
+            width: 45%;
+            display: inline-block;
+            margin: 13px; /* Add margin for spacing */
+            text-align: left;
+        }
+
+        /* Style the labels for the input fields */
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        /* Style the input fields */
+        input[type="text"] {
+            width: 100%;
+            height: 38px; /* Set the height for the input fields */
+            padding: 5px;
+            margin: 18px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Center the text above the input boxes */
+        .column label {
+            text-align: center;
+        }
+
+        /* Style the "Leave a Message" textarea */
+        textarea {
+            width: 100%;
+            height: 300px; /* Increase the height to make it bigger */
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Add margin between input fields */
+        .column input[type="text"] {
+            margin: 5px 0;
+        }
+
+        .register-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: green; /* Change the background color to your preference */
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-size: 18px;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
