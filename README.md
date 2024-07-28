@@ -36,17 +36,8 @@ This is a simple website dedicated to the game of chess. It provides information
 
 ## Accessing the Website
 
-You can access the live version of this website hosted on GitHub Pages by clicking [here](https://KheavKienghok.github.io/Chess-Website). 
+You can access the live version of this website hosted on GitHub Pages by clicking [here](https://KheavKienghok.github.io/Chess-Website/). 
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature-name`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add some feature'`).
-5. Push to the branch (`git push origin feature/your-feature-name`).
-6. Create a new Pull Request.
-
-Please ensure that your pull request adheres to the code style and guidelines of this project.
+Contributions are welcome! 
