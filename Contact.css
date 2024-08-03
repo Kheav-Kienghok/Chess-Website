@@ -11,26 +11,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .logo {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .logo img {
     height: 100px;
-    width: 100px; 
-    border-radius: 50%; 
-    object-fit: cover; 
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
     margin-right: 10px;
 }
 
 .website-name {
     font-size: 24px;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
 }
 
 nav ul {
@@ -39,7 +40,7 @@ nav ul {
     padding: 0;
     display: flex;
     align-items: center;
-    margin-left: -570px;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -54,44 +55,35 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 20px;
-    padding: 5px 10px; 
-    
+    padding: 5px 10px;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content to the top */
+    justify-content: flex-start;
     align-items: center;
-    min-height: 90vh; 
-    text-align: center; /* Center text within the main section */
+    min-height: 90vh;
+    text-align: center;
     padding: 60px;
-    background: url('img/Contact.jpg') no-repeat center center/cover; /* Set the background image */
+    background: url('img/Contact.jpg') no-repeat center center/cover;
 }
 
 h2 {
-    font-size: 90px;
-    display: block; /* or display: inline-block; */
-    width: 100%; /* Ensures the text wraps within the container */
-    text-decoration: none;
+    font-size: 3rem;
     color: white;
     margin-top: 10px;
 }
 
 h3 {
-    font-size: 40px;
-    display: block; /* or display: inline-block; */
-    width: 100%; /* Ensures the text wraps within the container */
-    text-decoration: none;
-    color: green;
+    font-size: 2rem;
+    color: lightgreen;
     margin-top: 10px;
 }
 
 .chessboard {
-    background-color: rgba(0, 0, 0, 0.5); /* Add a black background with transparency */
-    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
-    background-position: center;
-    backdrop-filter: blur(3px); /* Apply a blur effect to the background */
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -101,118 +93,145 @@ h3 {
     color: white;
 }
 
-.chessboard h3 {
-    font-size: 65px;
-    margin: 20px 0;
-    color: lightgreen; 
-}
-
 .contact-section {
     display: flex;
     justify-content: space-between;
-    padding: 90px;
+    padding: 30px;
     gap: 20px;
-    
+    flex-wrap: wrap;
 }
 
 .contact-group {
-    flex-basis: 30%; /* Adjust the width as needed for three columns */
+    flex-basis: 30%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align the content in each column */
-    padding: 10px; /* Add padding to create space */
-}
-
-.left-group {
-    margin-right: 100px; /* Add margin to create space between left and middle groups */
-}
-
-
-.right-group {
-    margin-left: 100px;
+    align-items: center;
+    padding: 10px;
 }
 
 .contact-group p {
-    font-size: 20px;
-    color: green;
+    font-size: 1.2rem;
+    color: lightgreen;
     margin: 5px 0;
-    color: lightgreen; 
 }
 
-.contact-group p:first-child {
-    font-weight: bold; /* Make the labels bold */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-        /* Style the form container */
-        form {
-            width: 600px;
-            margin: 0 auto;
-            text-align: center;
-        }
+.column {
+    width: 100%;
+    max-width: 45%;
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+}
 
-        /* Style the left and right columns */
-        .column {
-            width: 45%;
-            display: inline-block;
-            margin: 13px; /* Add margin for spacing */
-            text-align: left;
-        }
+.message-column {
+    width: 100%;
+    margin-top: 10px;
+}
 
-        /* Style the labels for the input fields */
-        label {
-            display: block;
-            font-weight: bold;
-        }
+label {
+    display: block;
+    font-weight: bold;
+}
 
-        /* Style the input fields */
-        input[type="text"] {
-            width: 100%;
-            height: 38px; /* Set the height for the input fields */
-            padding: 5px;
-            margin: 18px 0;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
+input[type="text"], textarea {
+    width: 85%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
 
-        /* Center the text above the input boxes */
-        .column label {
-            text-align: center;
-        }
+textarea {
+    height: 150px;
+}
 
-        /* Style the "Leave a Message" textarea */
-        textarea {
-            width: 100%;
-            height: 300px; /* Increase the height to make it bigger */
-            padding: 5px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
+.register-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
 
-        /* Add margin between input fields */
-        .column input[type="text"] {
-            margin: 5px 0;
-        }
-
-        .register-button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: green; /* Change the background color to your preference */
-            color: white;
-            border: none;
-            border-radius: 3px;
-            font-size: 18px;
-            cursor: pointer;
-            text-align: center;
-        }
-        
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .website-name {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .column {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .website-name {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .column {
+        max-width: 100%;
+    }
+
+    .register-button {
+        margin-top: 20px;
+    }
+
+    footer {
+        position: static;
+        margin-top: 0px;
+    }
 }
